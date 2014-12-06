@@ -1,0 +1,674 @@
+/* grid system 1172-max-width */
+/* COLORS */
+.white {
+  color: white;
+}
+.caps {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+/* BODY & GLOBAL STYLES */
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  color: #484848;
+}
+body {
+  margin: 0 auto;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-weight: 300;
+}
+div.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1172px;
+}
+a,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+img.smallIcon {
+  width: 30px;
+}
+/* FONTS */
+h1.logo {
+  background-image: url("../images/logo.png");
+  background-size: 100%;
+  height: 40px;
+  width: 100px;
+  text-indent: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  margin-top: 0px;
+  left: 0;
+}
+h1.logo a {
+  padding: 10px;
+}
+h2.header {
+  font-size: 60px;
+  color: white;
+}
+h2.header span {
+  color: #f36b47;
+}
+h2 {
+  font-size: 26px;
+  letter-spacing: .02em;
+}
+h3 {
+  font-size: 20px;
+}
+.home {
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding: 13px 40px;
+  color: white;
+}
+h2.home {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+h3.smallHeader {
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 600;
+}
+p {
+  font-size: 16px;
+  color: #9d9c9c;
+  line-height: 25px;
+  letter-spacing: .02em;
+}
+h4 {
+  font-size: 12px;
+}
+h5 {
+  font-size: 14px;
+}
+h2,
+h3,
+h3,
+h4,
+h5 {
+  font-weight: 300;
+}
+/* NAVIGATION*/
+nav {
+  height: 90px;
+  padding-top: 15px;
+  background: white;
+}
+nav ul {
+  list-style-type: none;
+  padding-top: 10px;
+  text-align: right;
+}
+nav ul li {
+  display: inline;
+  padding-right: 28px;
+}
+nav ul li:last-child {
+  padding-right: 0;
+}
+nav ul li a {
+  padding: 2px;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+}
+nav ul li a:active,
+nav ul li a:hover {
+  border-bottom: 2px solid #fe5c32;
+}
+nav ul li a.active {
+  border-bottom: 2px solid #fe5c32;
+}
+nav ul li a.active::after {
+  content: url(../images/orangeArrow.png) no-repeat;
+  position: absolute;
+  bottom: -9px;
+  left: 45%;
+}
+.navigation {
+  display: none;
+  position: absolute;
+  top: 0;
+  padding-top: 15px;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+  background: white;
+}
+.navigation h1 {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+.navigation .btn .menu {
+  display: none;
+}
+.navigation .btn:hover .menu {
+  display: block;
+}
+.navigation li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+.navigation li a:hover {
+  background-color: #f4f4f4;
+}
+.navigation .logo {
+  float: left;
+}
+.navigation .logo a {
+  font-size: 2em;
+  padding: 10px 20px;
+}
+.navigation .btn-link {
+  float: right;
+  padding: 18px 30px;
+}
+.navigation .menu {
+  clear: both;
+}
+/* HEADER */
+header {
+  height: 489px;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 190px;
+}
+header ul {
+  padding-left: 0;
+}
+header p {
+  color: white;
+  width: 100%;
+}
+header h2,
+header h3 {
+  padding: 0px 40px;
+  margin: 0;
+  color: white;
+  margin-bottom: 20px;
+}
+header h2 {
+  margin-top: -70px;
+}
+header + aside {
+  background: #f36b47;
+  height: 100px;
+  text-align: center;
+  padding-top: 34px;
+}
+header + aside h3 {
+  margin-top: 0;
+}
+/* ALL sections */
+section {
+  text-align: center;
+}
+section h2 {
+  border-bottom: 2px solid #f36b47;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2px 0;
+}
+/* center first p and h2 tags */
+section p:first-of-type {
+  text-align: center;
+}
+section h2:first-of-type {
+  text-align: center;
+}
+/* ABOUT section */
+section#about {
+  height: 480px;
+}
+section#about div.aboutSections {
+  display: inline;
+  float: left;
+  width: 25%;
+  padding: 10px 15px;
+  height: 168px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+section#about div.aboutSections h3 {
+  text-align: center;
+}
+section#about h2 {
+  margin-top: 50px;
+  margin-bottom: 28px;
+}
+section#about p {
+  margin-bottom: 60px;
+}
+section#about h4 {
+  text-align: left;
+  padding-left: 7%;
+  color: #9d9c9c;
+  line-height: 1.5em;
+}
+section#about img {
+  padding: 0 auto;
+}
+/* RECENT section */
+section#recent {
+  height: 480px;
+}
+section#recent h2 {
+  margin-bottom: 20px;
+}
+section#recent p {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+section#recent p.caption {
+  width: 75%;
+}
+section#recent div div {
+  display: inline;
+  float: left;
+  width: 25%;
+  padding: 10px 15px;
+  /*height: 600px;*/
+
+}
+section#recent div div .portfolioDescription {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 10px 15px;
+  height: 168px;
+  margin-bottom: 66px;
+  margin-top: -5px;
+  padding: 0 10px;
+  height: 63px;
+  background: #eeeeee;
+}
+section#recent div div .portfolioDescription p,
+section#recent div div .portfolioDescription h4 {
+  text-align: right;
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+section#recent div div .portfolioDescription p {
+  border-bottom: 1px solid #d5d4d3;
+  padding-bottom: 6px;
+  color: #f36b47;
+}
+section#recent div div .portfolioDescription p:hover {
+  color: black;
+}
+section#recent img {
+  border: 1px solid #d5d4d3;
+}
+/* PORTFOLIO section */
+section#portfolio {
+  height: 1000px;
+}
+section#portfolio h2 {
+  margin-top: 40px;
+}
+section#portfolio ul {
+  list-style-type: none;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: left;
+  padding-left: 15px;
+}
+section#portfolio ul li {
+  display: inline;
+  margin-right: 20px;
+}
+section#portfolio ul li a {
+  border: 1px solid #cac6c6;
+  padding: 8px;
+  background: #eaeaea;
+  border-radius: 2px;
+  color: #9d9c9c;
+}
+section#portfolio ul li a:hover {
+  background: rgba(234, 234, 234, 0.8);
+}
+section#portfolio ul li a:active {
+  background: rgba(220, 220, 220, 0.8);
+}
+section#portfolio div.portfolioPics {
+  display: inline;
+  float: left;
+  width: 25%;
+  padding: 10px 15px;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+section#portfolio div.portfolioPics div {
+  transition: all .3s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 2px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+section#portfolio div.portfolioPics div:hover {
+  opacity: 1;
+}
+section#portfolio div.portfolioPics a.magnify {
+  /*border: 1px solid red;*/
+
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section#portfolio div.portfolioPics a.magnify img {
+  width: 36px;
+  height: 36px;
+  margin-top: 20%;
+  background: url(../images/magnify.png) center center;
+  background-size: 36px 36px;
+}
+section#portfolio div.portfolioPics a.magnify p {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+}
+/* SERVICES section*/
+section#services {
+  height: 700px;
+}
+section#services h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section#services p {
+  margin-bottom: 60px;
+}
+section#services div.servicesColumn {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 25%;
+  padding: 10px 15px;
+  height: 336px;
+  /*border: 1px solid @lightGray;*/
+
+  margin-bottom: 30px;
+}
+section#services div.servicesColumn div.sectionBlurb {
+  position: absolute;
+  /*width: 100%;*/
+
+  left: 10px;
+  top: 0;
+  right: 20px;
+  border: 1px solid #e4e4e4;
+  height: 100%;
+}
+section#services div.servicesColumn div.sectionBlurb .webTools {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -25px;
+  background: white;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e4e4e4;
+  padding: 8px;
+}
+section#services div.servicesColumn div.sectionBlurb .webTools img {
+  width: 30px;
+  height: 30px;
+}
+section#services div.servicesColumn div.sectionBlurb p {
+  text-align: left;
+  margin: 10px;
+}
+section#services div.servicesColumn div.sectionBlurb a {
+  color: #f36b47;
+}
+section#servicesB {
+  background: #f6f6f6;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  height: 350px;
+}
+section#servicesB div.serviceBColumn {
+  display: inline;
+  float: left;
+  width: 50%;
+  padding: 10px 15px;
+}
+section#servicesB div.serviceBColumn img {
+  width: 400px;
+}
+section#servicesB div.serviceBColumn p,
+section#servicesB div.serviceBColumn h3.smallHeader {
+  text-align: left;
+}
+section#servicesB div.serviceBColumn ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+section#servicesB div.serviceBColumn ul li {
+  font-size: 15px;
+  line-height: 1.7em;
+}
+section#servicesB div.serviceBColumn ul li span {
+  background: url(../images/greencheck.png) no-repeat center;
+  display: inline-block;
+  margin-right: 10px;
+  height: 13px;
+  width: 20px;
+}
+section#clients {
+  height: 255px;
+  padding-top: 20px;
+}
+section#clients .container div {
+  display: inline;
+  float: left;
+  width: 25%;
+  padding: 10px 15px;
+  margin-top: 40px;
+}
+section#clients .container div a {
+  color: white;
+  background: #f36b47;
+  padding: 15px 25px;
+  border-radius: 2px;
+  /*width: 300px;*/
+
+}
+/* FOOTER */
+footer {
+  transition: opacity .3s ease;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 57px;
+  background: #f36b47;
+  text-align: center;
+  padding-top: 20px;
+}
+footer h5 {
+  margin: 0 auto;
+  /*padding: 20px;*/
+
+}
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+  section#services {
+    height: 1050px;
+  }
+  section#services .container .servicesColumn {
+    display: inline;
+    float: left;
+    width: 50%;
+    padding: 10px 15px;
+  }
+  section#services .container .servicesColumn .sectionBlurb p {
+    margin-bottom: 20px;
+  }
+  section#servicesB {
+    height: 700px;
+  }
+  section#servicesB .container .serviceBColumn {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+  }
+  section#servicesB .container .serviceBColumn:nth-child(2) h3,
+  section#servicesB .container .serviceBColumn:nth-child(2) p,
+  section#servicesB .container .serviceBColumn:nth-child(2) ul {
+    text-align: center;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 940px;
+  }
+  section#recent div div {
+    display: inline;
+    float: left;
+    width: 50%;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 940px) {
+  .container {
+    width: 768px;
+  }
+  section#about {
+    height: 550px;
+  }
+  section#about .container .aboutSections {
+    display: inline;
+    float: left;
+    width: 50%;
+    padding: 10px 15px;
+  }
+  .navigation {
+    display: block;
+  }
+  section#portfolio {
+    height: 1760px;
+  }
+  section#portfolio .container div.portfolioPics {
+    display: inline;
+    float: left;
+    width: 50%;
+    padding: 10px 15px;
+  }
+  section#portfolio .container div.portfolioPics div {
+    left: 5px;
+    right: 5px;
+  }
+  section#services {
+    height: 1100px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  section#about {
+    height: 550px;
+  }
+  section#about .container .aboutSections {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+  }
+  section#recent div div {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: -20px;
+    margin-top: 5px;
+  }
+  section#portfolio {
+    height: 1760px;
+  }
+  section#portfolio .container div.portfolioPics {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+  }
+  section#portfolio .container div.portfolioPics div {
+    left: 5px;
+    right: 5px;
+  }
+  section#services {
+    height: 2000px;
+  }
+  section#services .container .servicesColumn {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+  }
+  section#services .container .servicesColumn .sectionBlurb p {
+    margin-bottom: 30px;
+  }
+  section#servicesB {
+    height: 730px;
+  }
+  section#servicesB .servicesBColumn img {
+    width: 100%;
+  }
+  section#clients {
+    height: 455px;
+  }
+  section#clients .container div {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+  }
+}
+/*
+
+320px — Mobile portrait
+480px — Mobile landscape
+600px — Small tablet
+768px — Tablet portrait
+940px - 1024px — Tablet landscape, netbook, small desktop
+1280px & greater — Desktop
+*/
